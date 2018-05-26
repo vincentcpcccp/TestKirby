@@ -1,0 +1,13 @@
+Title: Kirby TestSite
+
+----
+
+Author: Koen Cornelis
+
+----
+
+Description: This is a Kirby's TestSite
+
+----
+
+Copyright: © (date: Year) (link: http://cornelis.it text: Koen Cornelis)

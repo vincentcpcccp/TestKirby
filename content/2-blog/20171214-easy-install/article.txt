@@ -1,0 +1,17 @@
+Title: What an easy install this was
+
+----
+
+Coverimage: best-practices.png
+
+----
+
+Date: 2017-12-14
+
+----
+
+Text: 
+
+#This was a very easy install
+
+oh verily, it was the easiest install ever!
