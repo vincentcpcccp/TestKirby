@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="nl" xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+    <head>
+        <meta charset="UTF-8">
+        <title>Howest Hotel</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+        <link rel="stylesheet" type="text/css" href="assets/css/screen.css" />
+    
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:TaxCatchAll msdt:dt="string">45;#TI|a7fece31-07e2-4c0a-9f38-c0563f047e67</mso:TaxCatchAll>
+<mso:m99485b88215436a82099f8287cba0b0 msdt:dt="string">TI|a7fece31-07e2-4c0a-9f38-c0563f047e67</mso:m99485b88215436a82099f8287cba0b0>
+<mso:Kernteam msdt:dt="string">45;#TI|a7fece31-07e2-4c0a-9f38-c0563f047e67</mso:Kernteam>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+</head>
+    <body>
+
+        <form id="bookingForm">
+
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-sm-12" id="header">
+                        <h1>Howest Hotel</h1>
+                        <p>Your stay is magical! And it already starts when booking...</p>
+
+                        <img src="images/banner.jpg" id="banner" />
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-12" id="menu">
+                        <h2>Book your stay now!</h2>
+
+                        <div id="countdown"><span id="clock">30:00</span> time left to book...</div>
+
+                        <div class="list-group">
+                            <a href="#arrival" class="list-group-item">Arrival</a>
+                            <a href="#departure" class="list-group-item">Departure</a>
+                            <a href="#options" class="list-group-item">Options</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-12" id="main">
+                        <a name="arrival"></a>
+                        <h3>Pick your arrival date</h3>
+
+                        <input type="date" id="arrivalDate" class="form-control" required="required" />
+
+                        <a name="departure"></a>
+                        <h3>Pick your departure date</h3>
+
+                        <input type="date" id="departureDate" class="form-control" required="required" />
+
+                        <a name="options"></a>
+
+                        <h3>Choose your options</h3>
+
+                        <p>How many people will stay with us?</p>
+
+                        <div class="form-group">
+                            <label for="adults">Adults:</label>
+                            <input type="number" class="form-control" id="adults" min="1" max="2" required="required" />
+                        </div>
+                        <div class="form-group">
+                            <label for="children">Children:</label>
+                            <input type="number" class="form-control" id="children" min="0" max="2" required="required" />
+                        </div>
+                        <div class="checkbox">
+                            <label><input type="checkbox" id="babybed" value="yes">Do you need a baby bed?</label>
+                        </div>
+                        <div class="form-group">
+                            <label for="breakfast">What breakfast would you like?</label>
+                            <select class="form-control" id="breakfast" required="required">
+                                <option value="continental">Continental breakfast</option>
+                                <option value="english">English breakfast</option>
+                                <option value="none">No breakfast included</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="roomType">
+                                What type of room would you like?
+                                <a href="#" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-question-sign"></span></a>
+                            </label>
+                            <select class="form-control" id="roomType" required="required">
+                                <option value="queen">Queen size</option>
+                                <option value="king">King size</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="temperature">
+                                What room temperature would you prefer?
+                                <span id="temperatureOutput">20°C</span>
+                            </label>
+                            <input type="range" min="16" max="26" value="20" id="temperature" required="required" />
+                        </div>
+
+                        <input type="submit" class="btn form-control" id="submit" value="Book now!">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-12" id="footer">
+                        <hr />
+                        Images courtesy of <a href="http://www.freepik.com/" target="_blank">freepik.com</a>
+                        |
+                        Exam Web &amp; Mobile UI 2016-2017
+                        |
+                        <a href="#" id="showAllBookings">Show all bookings</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div id="myModal" class="modal fade" role="dialog">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">About the different room types</h4>
+                        </div>
+                        <div class="modal-body">
+                            <ul>
+                                <li>Queen size: 152cm bed width</li>
+                                <li>King size: 193cm bed width</li>
+                            </ul>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </form>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+        <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="assets/js/script.js"></script>
+    </body>
+</html>

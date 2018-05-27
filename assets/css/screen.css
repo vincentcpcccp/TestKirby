@@ -1,0 +1,67 @@
+body
+{
+    background-image: url(../media/wallpaper.png);
+    background-repeat: repeat;
+    font-family: "Open Sans", sans-serif;
+}
+
+.container
+{
+    max-width: 800px;
+    background: rgb(255, 255, 255);
+}
+
+h1
+{
+    color: rgb(204, 98, 12);
+    font-size: 5rem;
+    font-weight: bold;
+}
+
+#banner
+{
+    max-width: 100%;
+}
+
+h2
+{
+    font-size: 3rem;
+    padding-top: 15px;
+    padding-bottom: 20px;
+}
+
+h3
+{
+    font-size: 2rem;
+    padding-top: 10px;
+}
+
+label
+{
+    font-weight: normal;
+}
+
+#temperatureOutput
+{
+    color: rgb(204, 98, 12);
+}
+
+#submit
+{
+    background-color: rgb(204, 98, 12);
+    color: rgb(255, 255, 255);
+}
+
+#footer
+{
+    text-align: center;
+    padding: 20px;
+    font-size: 1rem;
+}
+
+#countdown
+{
+    color: rgb(204, 98, 12);
+    font-weight: bold;
+    padding-bottom: 30px;
+}
